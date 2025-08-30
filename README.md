@@ -11,6 +11,7 @@
 
 ## Tecnologias Utilizadas
 
+
 ## Arquitetura proposta (diagrama e explicação)
 
 ## Recursos necessários
