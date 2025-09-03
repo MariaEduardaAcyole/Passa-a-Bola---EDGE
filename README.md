@@ -22,7 +22,7 @@ O processamento ocorre localmente no dispositivo Edge, garantindo respostas ráp
 - Protocolos IoT (MQTT ou HTTP, se houver integração com servidor)
 
 ## Video do Placar:
-[![Assista ao vídeo](https://www.youtube.com/watch?v=FpRyiQhOh0U)](https://www.youtube.com/watch?v=FpRyiQhOh0U)
+[![Assista ao vídeo](video-simulador.gif)](https://www.youtube.com/watch?v=FpRyiQhOh0U)
 
 ## Arquitetura proposta (diagrama e explicação)
 
