@@ -28,23 +28,16 @@ Durante as Sprints 3 e 4, o projeto evoluiu para incluir:
 * **Display LCD 16x2 com módulo I2C** – saída para exibir o placar
 * **Interface Serial** – para simulação de envio de dados (tipo API)
 * **Wokwi** – simulação online
-* 
 
 ## 🎯 Funcionalidades e Melhorias
 
 * Incremento e reset do placar via botões físicos.
 * Exibição do placar em tempo real no **LCD**.
 * Logs de envio simulados via **Monitor Serial**.
-* Interface web responsiva com visual moderno e elementos interativos.
-* Documentação de endpoints, CRUD e testes unitários.
-* Validação de UX segundo as **Heurísticas de Nielsen**:
+* Interface web com visual acessivel para exibição dos dados.
 
   * Visibilidade do status do sistema
   * Correspondência entre sistema e mundo real
-  * Controle e liberdade do usuário
-  * Consistência e padrões
-  * Prevenção de erros
-  * Reconhecimento ao invés de memorização
   * Flexibilidade e eficiência de uso
   * Design estético e minimalista
   * Ajuda e documentação
@@ -61,7 +54,7 @@ Durante as Sprints 3 e 4, o projeto evoluiu para incluir:
    * Time B → incrementa pontos do time B
    * Reset → zera os placares
 
-2. **Processamento (Arduino UNO)**
+2. **Processamento (ESP32)**
 
    * Detecta pressionamento dos botões
    * Atualiza variáveis `pontosA` e `pontosB`
@@ -77,7 +70,7 @@ Durante as Sprints 3 e 4, o projeto evoluiu para incluir:
 * Conta no [Wokwi](https://wokwi.com) ou **Arduino IDE** instalado
 * Componentes:
 
-  * Arduino UNO
+  * ESP32
   * LCD 16x2 com I2C
   * 3 Botões
   * Jumpers e protoboard (se for físico)
@@ -87,10 +80,21 @@ Durante as Sprints 3 e 4, o projeto evoluiu para incluir:
 
 1. Acesse o projeto no [Wokwi](https://wokwi.com/projects/440753418502759425) ou abra o código no **Arduino IDE**.
 2. Conecte os componentes conforme o diagrama (já configurado no Wokwi).
-3. Execute a simulação ou faça o upload no Arduino físico.
+3. Execute a simulação ou faça a construção do projeto físico.
 4. Interaja com os botões:
 
    * 🔘 **Time A** → incrementa pontos do time A
    * 🔘 **Time B** → incrementa pontos do time B
    * 🔘 **Reset** → zera os placares
 5. Veja o placar atualizado no **LCD** e os logs de envio no **Monitor Serial**.
+
+## Integração com Broker
+1. Baixe o app MyMQTT
+2. Faça a conexão com o ip do seu broker
+3. Rode a simulação no wokwi
+
+## Dashboard em python
+1. Copie e cole o codigo fonte de python na sua IDE de preferencia
+2. baixe as bibliotecas presentes no inicio do codigo
+3. Rode o codigo
+4. Rode a simulação no wokwi
